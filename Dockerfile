@@ -10,5 +10,5 @@ RUN unzip pro.zip
 RUN cp -rvf pro-html/* .
 RUN rm -rf pro.zip pro-html
 #RUN systemctl restart httpd
-CMD ["/usr/bin/httpd","-D","FOREGROUND"]
+CMD ["/usr/sbin/httpd","-D","FOREGROUND"]
 EXPOSE 80
